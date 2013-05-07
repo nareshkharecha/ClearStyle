@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D3420F01734B53C00110941 /* SHCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3420EF1734B53C00110941 /* SHCTableViewCell.m */; };
+		9D3420F21734BE3300110941 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3420F11734BE3300110941 /* QuartzCore.framework */; };
+		9D3420F61734DCF500110941 /* SHCStrikethroughLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3420F51734DCF500110941 /* SHCStrikethroughLabel.m */; };
+		9D348A4F1735FB63000579CB /* SHCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D348A4E1735FB63000579CB /* SHCTableView.m */; };
 		9DC9CDAB1733F82500A78583 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC9CDAA1733F82500A78583 /* UIKit.framework */; };
 		9DC9CDAD1733F82500A78583 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC9CDAC1733F82500A78583 /* Foundation.framework */; };
 		9DC9CDAF1733F82500A78583 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC9CDAE1733F82500A78583 /* CoreGraphics.framework */; };
@@ -18,9 +22,20 @@
 		9DC9CDC11733F82500A78583 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9CDC01733F82500A78583 /* Default-568h@2x.png */; };
 		9DC9CDC41733F82500A78583 /* SHCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9CDC31733F82500A78583 /* SHCViewController.m */; };
 		9DC9CDC71733F82500A78583 /* SHCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9CDC51733F82500A78583 /* SHCViewController.xib */; };
+		9DC9CDCF1734018900A78583 /* SHCToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9CDCE1734018900A78583 /* SHCToDoItem.m */; };
+		9DE23AA51739224B00C33348 /* SHCTableViewDragAddNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE23AA41739224B00C33348 /* SHCTableViewDragAddNew.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D3420EE1734B53C00110941 /* SHCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCTableViewCell.h; sourceTree = "<group>"; };
+		9D3420EF1734B53C00110941 /* SHCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCTableViewCell.m; sourceTree = "<group>"; };
+		9D3420F11734BE3300110941 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9D3420F31734CBDF00110941 /* SHCTableViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHCTableViewCellDelegate.h; sourceTree = "<group>"; };
+		9D3420F41734DCF500110941 /* SHCStrikethroughLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCStrikethroughLabel.h; sourceTree = "<group>"; };
+		9D3420F51734DCF500110941 /* SHCStrikethroughLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCStrikethroughLabel.m; sourceTree = "<group>"; };
+		9D348A4D1735FB63000579CB /* SHCTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCTableView.h; sourceTree = "<group>"; };
+		9D348A4E1735FB63000579CB /* SHCTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCTableView.m; sourceTree = "<group>"; };
+		9D348A501735FCAF000579CB /* SHCTableViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHCTableViewDataSource.h; sourceTree = "<group>"; };
 		9DC9CDA71733F82500A78583 /* ClearStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC9CDAA1733F82500A78583 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9DC9CDAC1733F82500A78583 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +52,10 @@
 		9DC9CDC21733F82500A78583 /* SHCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHCViewController.h; sourceTree = "<group>"; };
 		9DC9CDC31733F82500A78583 /* SHCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHCViewController.m; sourceTree = "<group>"; };
 		9DC9CDC61733F82500A78583 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SHCViewController.xib; sourceTree = "<group>"; };
+		9DC9CDCD1734018900A78583 /* SHCToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCToDoItem.h; sourceTree = "<group>"; };
+		9DC9CDCE1734018900A78583 /* SHCToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCToDoItem.m; sourceTree = "<group>"; };
+		9DE23AA31739224B00C33348 /* SHCTableViewDragAddNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCTableViewDragAddNew.h; sourceTree = "<group>"; };
+		9DE23AA41739224B00C33348 /* SHCTableViewDragAddNew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCTableViewDragAddNew.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3420F21734BE3300110941 /* QuartzCore.framework in Frameworks */,
 				9DC9CDAB1733F82500A78583 /* UIKit.framework in Frameworks */,
 				9DC9CDAD1733F82500A78583 /* Foundation.framework in Frameworks */,
 				9DC9CDAF1733F82500A78583 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +93,7 @@
 		9DC9CDA91733F82500A78583 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D3420F11734BE3300110941 /* QuartzCore.framework */,
 				9DC9CDAA1733F82500A78583 /* UIKit.framework */,
 				9DC9CDAC1733F82500A78583 /* Foundation.framework */,
 				9DC9CDAE1733F82500A78583 /* CoreGraphics.framework */,
@@ -83,12 +104,24 @@
 		9DC9CDB01733F82500A78583 /* ClearStyle */ = {
 			isa = PBXGroup;
 			children = (
+				9DC9CDB11733F82500A78583 /* Supporting Files */,
 				9DC9CDB91733F82500A78583 /* SHCAppDelegate.h */,
 				9DC9CDBA1733F82500A78583 /* SHCAppDelegate.m */,
 				9DC9CDC21733F82500A78583 /* SHCViewController.h */,
 				9DC9CDC31733F82500A78583 /* SHCViewController.m */,
 				9DC9CDC51733F82500A78583 /* SHCViewController.xib */,
-				9DC9CDB11733F82500A78583 /* Supporting Files */,
+				9DC9CDCD1734018900A78583 /* SHCToDoItem.h */,
+				9DC9CDCE1734018900A78583 /* SHCToDoItem.m */,
+				9D3420EE1734B53C00110941 /* SHCTableViewCell.h */,
+				9D3420EF1734B53C00110941 /* SHCTableViewCell.m */,
+				9D3420F31734CBDF00110941 /* SHCTableViewCellDelegate.h */,
+				9D3420F41734DCF500110941 /* SHCStrikethroughLabel.h */,
+				9D3420F51734DCF500110941 /* SHCStrikethroughLabel.m */,
+				9D348A4D1735FB63000579CB /* SHCTableView.h */,
+				9D348A4E1735FB63000579CB /* SHCTableView.m */,
+				9D348A501735FCAF000579CB /* SHCTableViewDataSource.h */,
+				9DE23AA31739224B00C33348 /* SHCTableViewDragAddNew.h */,
+				9DE23AA41739224B00C33348 /* SHCTableViewDragAddNew.m */,
 			);
 			path = ClearStyle;
 			sourceTree = "<group>";
@@ -177,6 +210,11 @@
 				9DC9CDB71733F82500A78583 /* main.m in Sources */,
 				9DC9CDBB1733F82500A78583 /* SHCAppDelegate.m in Sources */,
 				9DC9CDC41733F82500A78583 /* SHCViewController.m in Sources */,
+				9DC9CDCF1734018900A78583 /* SHCToDoItem.m in Sources */,
+				9D3420F01734B53C00110941 /* SHCTableViewCell.m in Sources */,
+				9D3420F61734DCF500110941 /* SHCStrikethroughLabel.m in Sources */,
+				9D348A4F1735FB63000579CB /* SHCTableView.m in Sources */,
+				9DE23AA51739224B00C33348 /* SHCTableViewDragAddNew.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +337,7 @@
 				9DC9CDCC1733F82500A78583 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
