@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "SHCTableViewDataSource.h"
 
+#define SHC_ROW_HEIGHT 55.0f
+
 @interface SHCTableView : UIView <UIScrollViewDelegate>
 
 // the object that acts as the datasource for this table
@@ -16,6 +18,8 @@
 
 // the UIScrollView that hosts the table contents
 @property (nonatomic, assign, readonly) UIScrollView *scrollView;
+
+@property (nonatomic, assign) id<UIScrollViewDelegate> delegate;
 
 // dequeues a cell that can be reused
 - (UIView *)dequeueReusableCell;

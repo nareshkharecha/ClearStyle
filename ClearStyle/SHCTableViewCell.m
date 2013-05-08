@@ -11,20 +11,23 @@
 #import "SHCStrikethroughLabel.h"
 
 @implementation SHCTableViewCell {
-    CAGradientLayer* _gradientLayer;
-	CGPoint _originalCenter;
     
-	BOOL _deleteOnDragRelease;
-    
-	SHCStrikethroughLabel *_label;
+    // Primary UI components
+    CAGradientLayer *_gradientLayer;
 	CALayer *_itemCompleteLayer;
+    SHCStrikethroughLabel *_label;
     
-	BOOL _markCompleteOnDragRelease;
+    // Transient state
+	BOOL _deleteOnDragRelease;
+    BOOL _markCompleteOnDragRelease;
+    CGPoint _originalCenter;
     
+    // Contextual cues
 	UILabel *_tickLabel;
 	UILabel *_crossLabel;
 }
 
+const float LABEL_LEFT_MARGIN = 15.0f;
 const float UI_CUES_MARGIN = 10.0f;
 const float UI_CUES_WIDTH = 50.0f;
 
@@ -77,8 +80,6 @@ const float UI_CUES_WIDTH = 50.0f;
     }
     return self;
 }
-
-const float LABEL_LEFT_MARGIN = 15.0f;
 
 -(void)layoutSubviews {
     [super layoutSubviews];

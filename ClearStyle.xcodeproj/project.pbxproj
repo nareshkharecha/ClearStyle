@@ -23,6 +23,7 @@
 		9DC9CDC41733F82500A78583 /* SHCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9CDC31733F82500A78583 /* SHCViewController.m */; };
 		9DC9CDC71733F82500A78583 /* SHCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9CDC51733F82500A78583 /* SHCViewController.xib */; };
 		9DC9CDCF1734018900A78583 /* SHCToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9CDCE1734018900A78583 /* SHCToDoItem.m */; };
+		9DE1E309173A1F3D00B9336B /* SHCTableViewPinchToAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1E308173A1F3D00B9336B /* SHCTableViewPinchToAdd.m */; };
 		9DE23AA51739224B00C33348 /* SHCTableViewDragAddNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE23AA41739224B00C33348 /* SHCTableViewDragAddNew.m */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,8 @@
 		9DC9CDC61733F82500A78583 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SHCViewController.xib; sourceTree = "<group>"; };
 		9DC9CDCD1734018900A78583 /* SHCToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCToDoItem.h; sourceTree = "<group>"; };
 		9DC9CDCE1734018900A78583 /* SHCToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCToDoItem.m; sourceTree = "<group>"; };
+		9DE1E307173A1F3D00B9336B /* SHCTableViewPinchToAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCTableViewPinchToAdd.h; sourceTree = "<group>"; };
+		9DE1E308173A1F3D00B9336B /* SHCTableViewPinchToAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCTableViewPinchToAdd.m; sourceTree = "<group>"; };
 		9DE23AA31739224B00C33348 /* SHCTableViewDragAddNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCTableViewDragAddNew.h; sourceTree = "<group>"; };
 		9DE23AA41739224B00C33348 /* SHCTableViewDragAddNew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCTableViewDragAddNew.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +125,8 @@
 				9D348A501735FCAF000579CB /* SHCTableViewDataSource.h */,
 				9DE23AA31739224B00C33348 /* SHCTableViewDragAddNew.h */,
 				9DE23AA41739224B00C33348 /* SHCTableViewDragAddNew.m */,
+				9DE1E307173A1F3D00B9336B /* SHCTableViewPinchToAdd.h */,
+				9DE1E308173A1F3D00B9336B /* SHCTableViewPinchToAdd.m */,
 			);
 			path = ClearStyle;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 				9D3420F61734DCF500110941 /* SHCStrikethroughLabel.m in Sources */,
 				9D348A4F1735FB63000579CB /* SHCTableView.m in Sources */,
 				9DE23AA51739224B00C33348 /* SHCTableViewDragAddNew.m in Sources */,
+				9DE1E309173A1F3D00B9336B /* SHCTableViewPinchToAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

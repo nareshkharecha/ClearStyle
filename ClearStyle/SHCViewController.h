@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SHCTableViewCellDelegate.h"
 #import "SHCTableView.h"
+#import "SHCTableViewDragAddNew.h"
 
 @interface SHCViewController : UIViewController <SHCTableViewDataSource, SHCTableViewCellDelegate>
 

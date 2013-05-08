@@ -41,6 +41,7 @@
 						<string key="NSFrameSize">{320, 548}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -265,17 +266,25 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
+					<string key="className">SHCTableViewDragAddNew</string>
+					<string key="superclassName">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/SHCTableViewDragAddNew.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">SHCViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="outlets">
 						<string key="NS.key.0">tableView</string>
-						<string key="NS.object.0">SHCTableView</string>
+						<string key="NS.object.0">SHCTableViewDragAddNew</string>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<string key="NS.key.0">tableView</string>
 						<object class="IBToOneOutletInfo" key="NS.object.0">
 							<string key="name">tableView</string>
-							<string key="candidateClassName">SHCTableView</string>
+							<string key="candidateClassName">SHCTableViewDragAddNew</string>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">

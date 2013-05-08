@@ -21,6 +21,6 @@
 @property (nonatomic, assign) id<SHCTableViewCellDelegate> delegate;
 
 // the label used to render the to-do text
-@property (nonatomic, assign, readonly) SHCStrikethroughLabel *label;
+@property (nonatomic, strong, readonly) SHCStrikethroughLabel* label;
 
 @end

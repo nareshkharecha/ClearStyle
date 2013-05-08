@@ -9,6 +9,7 @@
 #import "SHCViewController.h"
 #import "SHCToDoItem.h"
 #import "SHCTableViewCell.h"
+#import "SHCTableViewDragAddNew.h"
 
 @interface SHCViewController ()
 
@@ -21,6 +22,7 @@
     
     // the offcet applied to cell when entering "edit mode"
     float _editingOffset;
+    SHCTableViewDragAddNew *_dragAddNew;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -57,6 +59,8 @@
     self.tableView.backgroundColor = [UIColor blackColor];
     
     [self.tableView registerClassForCells:[SHCTableViewCell class]];
+    
+    _dragAddNew = [[SHCTableViewDragAddNew alloc] initWithTableView:self.tableView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -86,6 +90,26 @@
     cell.delegate = self;
     cell.backgroundColor = [self colorForIndex:row];
     return cell;
+}
+
+- (void)itemAdded
+{
+    // create the new item
+    SHCToDoItem *toDoItem = [[SHCToDoItem alloc] init];
+    [_toDoItems insertObject:toDoItem atIndex:0];
+    
+    // refresh the table
+    [_tableView reloadData];
+    
+    // enter edit mode
+    SHCTableViewCell *editCell;
+    for (SHCTableViewCell *cell in _tableView.visibleCells) {
+        if (cell.todoItem == toDoItem) {
+            editCell = cell;
+            break;
+        }
+    }
+    [editCell.label becomeFirstResponder];
 }
 
 #pragma mark - UITableViewDataDelegate Protocol Methods

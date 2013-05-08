@@ -18,4 +18,6 @@
 // obtain the cell for the given row
 - (UIView *)cellForRow:(NSInteger)row;
 
+- (void)itemAdded;
+
 @end

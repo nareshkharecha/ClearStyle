@@ -8,6 +8,8 @@
 
 #import "SHCTableView.h"
 
-@interface SHCTableViewDragAddNew : SHCTableView
+@interface SHCTableViewDragAddNew : NSObject <UIScrollViewDelegate>
+
+- (id)initWithTableView:(SHCTableView *)tableView;
 
 @end
