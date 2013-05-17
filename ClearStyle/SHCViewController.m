@@ -10,6 +10,7 @@
 #import "SHCToDoItem.h"
 #import "SHCTableViewCell.h"
 #import "SHCTableViewDragAddNew.h"
+#import "SHCTableViewPinchToAdd.h"
 
 @interface SHCViewController ()
 
@@ -23,6 +24,8 @@
     // the offcet applied to cell when entering "edit mode"
     float _editingOffset;
     SHCTableViewDragAddNew *_dragAddNew;
+    
+    SHCTableViewPinchToAdd *_pinchAddNew;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -61,6 +64,8 @@
     [self.tableView registerClassForCells:[SHCTableViewCell class]];
     
     _dragAddNew = [[SHCTableViewDragAddNew alloc] initWithTableView:self.tableView];
+    
+    _pinchAddNew = [[SHCTableViewPinchToAdd alloc] initWithTableView:self.tableView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -94,9 +99,14 @@
 
 - (void)itemAdded
 {
+    [self itemAddedAtIndex:0];
+}
+
+- (void)itemAddedAtIndex:(NSInteger)index
+{
     // create the new item
     SHCToDoItem *toDoItem = [[SHCToDoItem alloc] init];
-    [_toDoItems insertObject:toDoItem atIndex:0];
+    [_toDoItems insertObject:toDoItem atIndex:index];
     
     // refresh the table
     [_tableView reloadData];
@@ -110,17 +120,6 @@
         }
     }
     [editCell.label becomeFirstResponder];
-}
-
-#pragma mark - UITableViewDataDelegate Protocol Methods
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 55.0f;
-}
-
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    cell.backgroundColor = [self colorForIndex:indexPath.row];
 }
 
 - (void)toDoItemDeleted:(SHCToDoItem *)todoItem

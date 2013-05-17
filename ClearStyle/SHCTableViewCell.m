@@ -166,13 +166,7 @@ const float UI_CUES_WIDTH = 50.0f;
 			// notify the delegate that this item should be deleted
 			[self.delegate toDoItemDeleted:self.todoItem];
 		}
-        
-        /*if (!_markCompleteOnDragRelease) {
-            self.todoItem.completed = NO;
-            _itemCompleteLayer.hidden = YES;
-            _label.strikethrough = NO;
-        }*/
-        
+                
         if (_markCompleteOnDragRelease) {
             // mark the item as complete and update the UI state
             self.todoItem.completed = YES;

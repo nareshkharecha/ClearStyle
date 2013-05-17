@@ -184,7 +184,7 @@
 }
 
 #pragma mark - UIScrollViewDelegate forwarding
-- (BOOL)respondsToSelector:(SEL)aSelector
+- (BOOL) respondsToSelector:(SEL)aSelector
 {
     if ([self.delegate respondsToSelector:aSelector]) {
         return YES;

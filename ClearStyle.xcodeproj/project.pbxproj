@@ -18,11 +18,12 @@
 		9DC9CDB71733F82500A78583 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9CDB61733F82500A78583 /* main.m */; };
 		9DC9CDBB1733F82500A78583 /* SHCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9CDBA1733F82500A78583 /* SHCAppDelegate.m */; };
 		9DC9CDBD1733F82500A78583 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9CDBC1733F82500A78583 /* Default.png */; };
-		9DC9CDBF1733F82500A78583 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9CDBE1733F82500A78583 /* Default@2x.png */; };
 		9DC9CDC11733F82500A78583 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9CDC01733F82500A78583 /* Default-568h@2x.png */; };
 		9DC9CDC41733F82500A78583 /* SHCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9CDC31733F82500A78583 /* SHCViewController.m */; };
 		9DC9CDC71733F82500A78583 /* SHCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9CDC51733F82500A78583 /* SHCViewController.xib */; };
 		9DC9CDCF1734018900A78583 /* SHCToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9CDCE1734018900A78583 /* SHCToDoItem.m */; };
+		9DD98350173C244D003329A1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DD9834F173C244D003329A1 /* Default@2x.png */; };
+		9DD98353173C24AC003329A1 /* iDo Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DD9834D173C20FE003329A1 /* iDo Logo.png */; };
 		9DE1E309173A1F3D00B9336B /* SHCTableViewPinchToAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1E308173A1F3D00B9336B /* SHCTableViewPinchToAdd.m */; };
 		9DE23AA51739224B00C33348 /* SHCTableViewDragAddNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE23AA41739224B00C33348 /* SHCTableViewDragAddNew.m */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,9 @@
 		9DC9CDC61733F82500A78583 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SHCViewController.xib; sourceTree = "<group>"; };
 		9DC9CDCD1734018900A78583 /* SHCToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCToDoItem.h; sourceTree = "<group>"; };
 		9DC9CDCE1734018900A78583 /* SHCToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCToDoItem.m; sourceTree = "<group>"; };
+		9DD9834D173C20FE003329A1 /* iDo Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iDo Logo.png"; sourceTree = "<group>"; };
+		9DD9834F173C244D003329A1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9DD98351173C2453003329A1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		9DE1E307173A1F3D00B9336B /* SHCTableViewPinchToAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCTableViewPinchToAdd.h; sourceTree = "<group>"; };
 		9DE1E308173A1F3D00B9336B /* SHCTableViewPinchToAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCTableViewPinchToAdd.m; sourceTree = "<group>"; };
 		9DE23AA31739224B00C33348 /* SHCTableViewDragAddNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCTableViewDragAddNew.h; sourceTree = "<group>"; };
@@ -79,6 +83,9 @@
 		9DC9CD9E1733F82500A78583 = {
 			isa = PBXGroup;
 			children = (
+				9DD98351173C2453003329A1 /* Default.png */,
+				9DD9834F173C244D003329A1 /* Default@2x.png */,
+				9DD9834D173C20FE003329A1 /* iDo Logo.png */,
 				9DC9CDB01733F82500A78583 /* ClearStyle */,
 				9DC9CDA91733F82500A78583 /* Frameworks */,
 				9DC9CDA81733F82500A78583 /* Products */,
@@ -199,9 +206,10 @@
 			files = (
 				9DC9CDB51733F82500A78583 /* InfoPlist.strings in Resources */,
 				9DC9CDBD1733F82500A78583 /* Default.png in Resources */,
-				9DC9CDBF1733F82500A78583 /* Default@2x.png in Resources */,
 				9DC9CDC11733F82500A78583 /* Default-568h@2x.png in Resources */,
 				9DC9CDC71733F82500A78583 /* SHCViewController.xib in Resources */,
+				9DD98350173C244D003329A1 /* Default@2x.png in Resources */,
+				9DD98353173C24AC003329A1 /* iDo Logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
